@@ -1,5 +1,5 @@
 # news-scraper
-Web app that lets users view and leave comments on the latest news; using Mongoose and Cheerio to scrape news from another site.
+Web app that lets users view and leave comments on the latest news; using Mongoose and Cheerio to scrape news from another site. This app essentially scrapes a site with Cheerio, stores the site's data with MongoDB, and performs CRUD operations on the data using the Mongoose ORM.
 
 # Deployment
 * GitHub
