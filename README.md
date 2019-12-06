@@ -6,9 +6,12 @@ Web app that lets users view and leave comments on the latest news; using Mongoo
 * Heroku
 
 # Technologies Used
-* express
+* Node.js
+* MongoDB
+* Mongoose
+* body-parser
+* Express.js
 * express-handlebars
-* mongoose
 * cheerio
 * axios
 

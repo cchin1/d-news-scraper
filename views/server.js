@@ -4,6 +4,12 @@ var mongoose = require("mongoose");
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 
+//Place these after you load the mongoose package into you variable mongoose
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+
 // Setup our port to be 3000
 var PORT = process.env.PORT || 3000;
 
@@ -12,6 +18,9 @@ var app = express();
 
 // Setup an Express Router
 var router = express.Router();
+
+// Require our routes file pass the router object
+require("./config/routes")(router);
 
 // Designate our public folder as a static directory
 app.use(express.static(__dirname + "/public"));
